@@ -26,11 +26,9 @@ public class Glview extends GLSurfaceView {
             case MotionEvent.ACTION_BUTTON_PRESS:
                 break;
             case MotionEvent.ACTION_DOWN:
-                _glrend.beginRotate();
                 invalidate = true;
                 break;
             case MotionEvent.ACTION_UP:
-                _glrend.endRotate();
                 break;
         }
         if (invalidate) {
